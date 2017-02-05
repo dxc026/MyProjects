@@ -150,16 +150,15 @@ public class MakeChange {
 		}
 
 	}
-
+//prints nickels
 	public void printNicks(int remainder) {
-		int nickles = 5;
-
-		if (!(nickles > remainder)) {
-			int printNicks = remainder / nickles;
-			System.out.println("Nickles: " + printNicks);
-			int remainderNicks = remainder % nickles;
+		int nickels = 5;
+		if (!(nickels > remainder)) {
+			int printNicks = remainder / nickels;
+			System.out.println("nickels: " + printNicks);
+			int remainderNicks = remainder % nickels;
 			printPennies(remainderNicks);
-			nickles = remainder;
+			nickels = remainder;
 		} else {
 
 			printPennies(remainder);
